@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_upload"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/product_description_box"
+        android:layout_width="342dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="34dp"
+        android:autofillHints="@string/Product_description"
+        android:background="@drawable/passwordbox"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/Product_description"
+        android:inputType="textMultiLine"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/Product_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/Back_Button"
+        android:layout_width="254dp"
+        android:layout_height="36dp"
+        android:background="@drawable/loginbutton"
+        android:text="@string/Back_Button"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Phone"
+        app:layout_constraintVertical_bias="0.205" />
+
+    <EditText
+        android:id="@+id/Phone"
+        android:layout_width="210dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
+        android:autofillHints="@string/Phone"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="@string/Phone"
+        android:inputType="phone"
+        android:text="@string/Phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Email"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="210dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="112dp"
+        android:autofillHints="@string/Email"
+        android:background="@android:drawable/editbox_background_normal"
+        android:ems="10"
+        android:hint="@string/Email"
+        android:inputType="textEmailAddress"
+        android:text="@string/Email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_description_box"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/Product_Image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/Product_Image"
+        app:layout_constraintBottom_toBottomOf="@+id/Product_Border"
+        app:layout_constraintEnd_toEndOf="@+id/Product_Border"
+        app:layout_constraintStart_toStartOf="@+id/Product_Border"
+        app:layout_constraintTop_toTopOf="@+id/Product_Border"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <ImageView
+        android:id="@+id/Product_Border"
+        android:layout_width="157dp"
+        android:layout_height="158dp"
+        android:contentDescription="@string/Image_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.237"
+        app:srcCompat="@android:drawable/gallery_thumb" />
+
+    <ImageView
+        android:id="@+id/Seller_Back"
+        android:layout_width="81dp"
+        android:layout_height="82dp"
+        android:contentDescription="@string/Image_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.163"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/Seller_Image"
+        android:layout_width="56dp"
+        android:layout_height="67dp"
+        android:contentDescription="@string/Seller_Image"
+        app:layout_constraintBottom_toBottomOf="@+id/Seller_Back"
+        app:layout_constraintEnd_toEndOf="@+id/Seller_Back"
+        app:layout_constraintStart_toStartOf="@+id/Seller_Back"
+        app:layout_constraintTop_toTopOf="@+id/Seller_Back"
+        app:srcCompat="@drawable/user_icon" />
+
+    <TextView
+        android:id="@+id/Seller_Name"
+        android:layout_width="261dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/passwordbox"
+        android:backgroundTintMode="src_over"
+        android:fadingEdge="vertical"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="@string/full_name"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/Seller_Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/product_Title"
+        android:layout_width="164dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="93dp"
+        android:background="@drawable/passwordbox"
+        android:backgroundTintMode="src_over"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="@string/Product_Title"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Product_Border" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="342dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        android:autofillHints="@string/Price"
+        android:background="@drawable/passwordbox"
+        android:ems="10"
+        android:hint="@string/Price"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/Price"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_Title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="390dp" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

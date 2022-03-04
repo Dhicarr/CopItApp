@@ -1,0 +1,14 @@
+#!/bin/bash
+
+fixPermissionsPHP () {
+	find $1 -type d -exec chmod 770 {} \;
+	find $1 -type f -exec chmod 664 {} \;
+	find $1 -regex '.*\.php' -type f -exec chmod 660 {} \;
+	chmod 771 $1
+}
+
+#fixPermissionsPHP dir
+
+chmod 770 fixPermissions
+chmod 733 sess
+chmod t+ sess

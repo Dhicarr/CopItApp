@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/title_home" />
+        <item
+            android:id="@+id/nav_my_posts"
+            android:icon="@drawable/plus_icon"
+            android:title="My Posts" />
+        <item
+            android:id="@+id/nav_my_likes"
+            android:icon="?android:attr/actionModeWebSearchDrawable"
+            android:title="My Likes" />
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@android:drawable/ic_dialog_email"
+            android:title="Messages" />
+        <item
+            android:id="@+id/nav_log_out"
+            android:icon="@android:drawable/ic_lock_power_off"
+            android:title="Log Out" />
+    </group>
+</menu>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_upload"
+    tools:context=".PostViewPresenter">
+
+    <EditText
+        android:id="@+id/Title"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="375dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="225dp"
+        android:autofillHints="@string/Title"
+        android:background="@drawable/passwordbox"
+        android:ems="10"
+        android:hint="@string/Title"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421" />
+
+    <EditText
+        android:id="@+id/Price"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="150dp"
+        android:autofillHints="@string/Price"
+        android:background="@drawable/passwordbox"
+        android:ems="10"
+        android:hint="@string/Price"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.468" />
+
+    <EditText
+        android:id="@+id/Product_description"
+        android:layout_width="330dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="65dp"
+        android:autofillHints="@string/Product_description"
+        android:background="@drawable/passwordbox"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/Product_description"
+        android:inputType="textMultiLine"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="330dp"
+        android:layout_height="241dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125">
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="317dp"
+            android:layout_height="241dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="60dp"
+            android:src="@drawable/upload_box"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="410dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="63dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166">
+
+        <Button
+            android:id="@+id/add_picture"
+            android:layout_width="39dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/plus_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/menu"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="340dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/nav_bar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/Post"
+            android:layout_width="57dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="11dp"
+            android:background="@drawable/inapp_button"
+            android:text="@string/Post"
+            android:textColor="#FFE8F0FB"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/menu"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Spinner
+        android:id="@+id/new_post_spinner"
+        android:layout_width="330dp"
+        android:layout_height="42dp"
+        android:background="#ffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.519" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

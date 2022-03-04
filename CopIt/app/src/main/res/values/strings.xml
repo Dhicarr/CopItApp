@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">CopIt</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="Newuser">New user?</string>
+    <string name="Phone">Phone Number</string>
+    <string name="Login">LogIn</string>
+    <string name="LOGO">LOGO</string>
+    <string name="Clickhere">Click here</string>
+    <string name="Email">Email</string>
+    <string name="full_name">Full Name</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="background">Background</string>
+    <string name="Product_description">Product Description</string>
+    <string name="Post">Post</string>
+    <string name="empty"> </string>
+    <string name="already_have_an_account">already have an account</string>
+    <string name="upload_box">upload box</string>
+    <string name="button">Button</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="Title">Title</string>
+    <string name="Price">Price</string>
+    <string name="Back_Button">Back</string>
+    <string name="Like">Like</string>
+    <string name="Dislike">Dislike</string>
+    <string name="Image_background">Image Background</string>
+    <string name="Seller_Image">The image of the seller</string>
+    <string name="Product_Image">The image of the product</string>
+    <string name="Product_Title">Product Title</string>
+
+    <string name="title_activity_side__menu">Side_Menu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="contact_paragraph">"This app was created by the BackHomeDiesel group for the final 301 project, and is currently in release 1. It serves as a tool to help users buy and sell second-hand items with greater easability than it's competitors.\n\nContact Info: Telephone:416-123-4567 Email:diesel@backhome.com"</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+  
+    <string-array name="Categories">
+        <item>Electronics</item>
+        <item>Appliances</item>
+        <item>Clothing</item>
+        <item>Vehicles</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>
